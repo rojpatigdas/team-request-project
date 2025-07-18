@@ -1,9 +1,11 @@
+// openDialogforTeamRequestUnified.js
+// Google Chat dialog for unified team requests (Multiple Pods, cross-team coordination).
+// Provides a multi-section dialog for collecting client, project, and sub-task details, and routes responses to Zapier or other endpoints.
+
 /**
- * Opens a dialog in Google Chat.
- *
- * @param {Object} event the event object from Chat API.
- *
- * @return {object} open a Dialog in Google Chat.
+ * Opens the main unified team request dialog in Google Chat.
+ * @param {Object} event - The event object from Chat API.
+ * @return {Object} Dialog definition for Google Chat.
  */
 function openDialogforTeamRequestUnified(event) {
   utilprocess()
@@ -374,7 +376,12 @@ function openDialogforTeamRequestUnified(event) {
 //   UrlFetchApp.fetch(url, options);
 // }
 
-//Edited function name
+/**
+ * Handles the 'Next' button click in the unified team request dialog.
+ * Sends the collected data to Zapier and shows a thank you message.
+ * @param {Object} event - The event object from Chat API.
+ * @return {Object} Dialog definition for Google Chat.
+ */
 function nextDialogforTeamRequestUnified(event) {
 
 
