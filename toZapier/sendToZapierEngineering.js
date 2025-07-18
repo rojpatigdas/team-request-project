@@ -6,7 +6,7 @@ function sendToZapierEngineering(event) {
 
   //addDatatoSheetEngineering(event);
 
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_ENGINEERING; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   var parameters = event.common.parameters;
   var requestTypeEngineering = parameters.requestTypeEngineering;
   var dateObject = new Date()

@@ -1,5 +1,5 @@
 function sendToZapierTeamRequestUnified(event) {
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_TEAM_REQUEST_UNIFIED; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   
   var dateObject = new Date()
   var formattedDate = Utilities.formatDate(dateObject, "GMT", "yyyy-MM-dd HH:mm:ss");

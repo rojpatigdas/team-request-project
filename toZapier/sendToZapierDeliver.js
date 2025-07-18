@@ -6,7 +6,7 @@ function sendToZapierDeliver(event) {
 
   //addDatatoSheetDeliver(event);
 //event.common.formInputs.helpNeededWithDeliver[""].stringInputs.value[0]=='Research / Technical Consultation' || event.common.formInputs.helpNeededWithDeliver[""].stringInputs.value[0]=='GW Audit' || event.common.formInputs.helpNeededWithDeliver[""].stringInputs.value[0]=='Other'
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_DELIVER; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   
   if(event.common.parameters.helpNeededWith=='Research / Technical Consultation' || event.common.parameters.helpNeededWith=='GW Audit' ||event.common.parameters.helpNeededWith=='Other'){
         var parameters = event.common.parameters;

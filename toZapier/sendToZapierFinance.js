@@ -4,7 +4,7 @@
  */
 function sendToZapierFinance(event) {
   addDatatoSheetFinance(event);
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_FINANCE; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
     
   var ccMembershipFinance = (event.common.formInputs.ccMembershipFinance[""].stringInputs.value[0]!="Other")?
     event.common.formInputs.ccMembershipFinance[""].stringInputs.value[0]:

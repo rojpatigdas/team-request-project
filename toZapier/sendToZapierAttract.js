@@ -5,7 +5,7 @@ function sendToZapierAttract(event) {
 
   //addDatatoSheetAttract(event);
 
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_ATTRACT; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   
   var rawEpoch = event.common.formInputs.deadlineAttract[""].dateInput.msSinceEpoch;
   var dateObject = new Date(rawEpoch)

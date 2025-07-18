@@ -4,7 +4,7 @@
  * 
  */
 function sendToZapierMultiplePods(event) {
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_MULTIPLE_PODS; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   //test url below
   // var url = 'https://hooks.zapier.com/hooks/catch/6916010/3v7818v/';
   var dateObject = new Date()

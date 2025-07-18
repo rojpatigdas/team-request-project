@@ -6,7 +6,7 @@ function sendToZapierSupport(event) {
 
   //addDatatoSheetSupport(event);
 
-  var url = "YOUR_ZAPIER_WEBHOOK_URL"; // TODO: Insert your Zapier webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_SUPPORT; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   var dateObject = new Date()
   var formattedDate = Utilities.formatDate(dateObject, "GMT+8", "yyyy-MM-dd HH:mm:ss");
   var parameters = event.common.parameters;

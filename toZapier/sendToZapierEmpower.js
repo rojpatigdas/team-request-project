@@ -8,7 +8,7 @@
  * 
  */
 function sendToZapierEmpower(event) {
-  var url = "https://hooks.zapier.com/hooks/catch/6916010/31q5idz/"; // Replace with your Zapier webhook URL
+  var url = WEBHOOK_EMPOWER; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
    var dateObject = new Date()
   var formattedDate = Utilities.formatDate(dateObject, "GMT+8", "yyyy-MM-dd HH:mm:ss");
     

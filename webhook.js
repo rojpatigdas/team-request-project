@@ -3,7 +3,7 @@
  * 
  */
 function sendToZapierEmpowerr(event) {
-  var url = "YOUR_WEBHOOK_URL"; // TODO: Insert your webhook URL here. Do not commit real tokens to version control.
+  var url = WEBHOOK_GENERIC; // Reference from const.js. TODO: Set your webhook URL in const.js
   
   var dateObject = new Date(event.common.formInputs.deadlineAttract[""])
   var formattedDate = Utilities.formatDate(dateObject, "GMT", "yyyy-MM-dd HH:mm:ss");

@@ -5,7 +5,7 @@ function sendToZapierEngage(event) {
 
   //addDatatoSheetEngage(event);
 
-  var url = "https://hooks.zapier.com/hooks/catch/6916010/35wcw55/"; // Replace with your Zapier webhook URL
+  var url = WEBHOOK_ENGAGE; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
   
 
   var dateObject = new Date()
