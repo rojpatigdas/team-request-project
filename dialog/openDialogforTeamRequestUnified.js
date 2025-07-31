@@ -350,31 +350,7 @@ function openDialogforTeamRequestUnified(event) {
     }
   };
 }
-//test for extra fields -puebs
-// function editSubTasks(event) {
-//   var url = "https://hooks.zapier.com/hooks/catch/6916010/2ou6suu/";
-//    // Replace with your Zapier webhook URL https://hooks.zapier.com/hooks/catch/6916010/3m0p7mn/
-  
-//   var dateObject = new Date()
-//   var formattedDate = Utilities.formatDate(dateObject, "GMT", "yyyy-MM-dd HH:mm:ss");
-  
 
-//   // Logger.log(event.common.parameters.needHelpFinance)
- 
-//   var payload = {
-//     "formattedDate":formattedDate,
-//     "theSubTasks": event.common.formInputs.allSubTasks[""].stringInputs.value[0],
-//     // Add more parameters as needed
-//   };
-  
-//   var options = {
-//     method: "post",
-//     contentType: "application/json",
-//     payload: JSON.stringify(payload)
-//   };
-  
-//   UrlFetchApp.fetch(url, options);
-// }
 
 /**
  * Handles the 'Next' button click in the unified team request dialog.

@@ -5,8 +5,6 @@
  */
 function sendToZapierMultiplePods(event) {
   var url = WEBHOOK_MULTIPLE_PODS; // Reference from const.js. TODO: Set your Zapier webhook URL in const.js
-  //test url below
-  // var url = 'https://hooks.zapier.com/hooks/catch/6916010/3v7818v/';
   var dateObject = new Date()
   var formattedDate = Utilities.formatDate(dateObject, "GMT", "yyyy-MM-dd HH:mm:ss");
   Logger.log(event.common.parameters.needHelpFinance)

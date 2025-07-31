@@ -1,5 +1,5 @@
 function addDatatoSheetAttract(event) {
-  var spreadsheetId = "1h2b34DMFkaQm3hwrNJ4IGiGrpOT9O2d1LVGVwPot6zU";
+  var spreadsheetId = "YOUR_SPREADSHEET_ID_HERE";
   var sheetName = "Attract";
   var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName(sheetName);
   var rawEpoch = event.common.formInputs.deadlineAttract[""].dateInput.msSinceEpoch;
@@ -42,7 +42,7 @@ function addDatatoSheetAttract(event) {
 
 
 function addDatatoSheetDeliver(event) {
-  var spreadsheetId = "1h2b34DMFkaQm3hwrNJ4IGiGrpOT9O2d1LVGVwPot6zU";
+  var spreadsheetId = "YOUR_SPREADSHEET_ID_HERE";
   var sheetName = "Deliver";
   var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName(sheetName);
   
@@ -158,7 +158,7 @@ function addDatatoSheetDeliver(event) {
 function addDatatoSheetFinance (event) {
     var dateObject = new Date()
   var formattedDate = Utilities.formatDate(dateObject, "GMT", "yyyy-MM-dd HH:mm:ss");
-  var spreadsheetId = "1h2b34DMFkaQm3hwrNJ4IGiGrpOT9O2d1LVGVwPot6zU";
+  var spreadsheetId = "YOUR_SPREADSHEET_ID_HERE";
   var sheetName = "Finance";
   var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName(sheetName);
 
@@ -211,7 +211,7 @@ function addDatatoSheetFinance (event) {
  * Parameters: payload json sent to webhook
  */
 function addDatatoSheetEmpower (data) {
-  var spreadsheetId = "1h2b34DMFkaQm3hwrNJ4IGiGrpOT9O2d1LVGVwPot6zU";
+  var spreadsheetId = "YOUR_SPREADSHEET_ID_HERE";
   var sheetName = "Empower";
   var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName(sheetName);
 
@@ -260,7 +260,7 @@ function addDatatoSheetEmpower (data) {
 function addDatatoSheetExcite (event) {
     var dateObject = new Date()
   var formattedDate = Utilities.formatDate(dateObject, "GMT", "yyyy-MM-dd HH:mm:ss");
-  var spreadsheetId = "1h2b34DMFkaQm3hwrNJ4IGiGrpOT9O2d1LVGVwPot6zU";
+  var spreadsheetId = "YOUR_SPREADSHEET_ID_HERE";
   var sheetName = "Excite";
   var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName(sheetName);
 
